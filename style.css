@@ -7,7 +7,7 @@ background: #f0f2f5;
     display: flex;
     justify-content: center; /* center left and right */
     align-items: center; /*center top and bottom */
-    height: 240vh; /* full screen height */
+    height: 100vh; /* full screen height */
     gap: 60px;
 }
 .left{
@@ -21,17 +21,17 @@ font-size: 150px;
     width: 65%;
 }
 .login-box{
-    background: wheat;
+    background: white;
     padding: 80px;
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 input{
     width: 100%;
-    padding: 50px;
+    padding: 18px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
-    border-radius: 25px;
+    border-radius: 9px;
 }
 button{
     width: 100%;
