@@ -5,32 +5,33 @@ background: #f0f2f5;
 }
 .container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content: center; /* center left and right */
+    align-items: center; /*center top and bottom */
+    height: 240vh; /* full screen height */
+    gap: 60px;
 }
 .left{
     width: 40%;
 }
 .logo{
 color: #1877f2;
-font-size: 60px;
+font-size: 150px;
 }
 .right{
-    width: 30%;
+    width: 65%;
 }
 .login-box{
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+    background: wheat;
+    padding: 80px;
+    border-radius: 25px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 input{
     width: 100%;
-    padding: 12px;
+    padding: 50px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
-    border-radius: 6px;
+    border-radius: 25px;
 }
 button{
     width: 100%;
