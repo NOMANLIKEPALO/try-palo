@@ -1,47 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Facebook Home</title>
-<link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8">
+  <title>Facebook - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="navbar">
-<h1>facebook</h1>
+<header class="topbar">
+  <h1 class="logo-small">facebook</h1>
+  <button class="logout" onclick="logout()">Log out</button>
+</header>
+
+<div class="home-container">
+
+  <div class="sidebar">
+    <h3>Menu</h3>
+    <ul>
+      <li>Profile</li>
+      <li>Friends</li>
+      <li>Messages</li>
+      <li>Notifications</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="feed">
+
+    <div class="post-box">
+      <textarea placeholder="What's on your mind?"></textarea>
+      <button>Post</button>
+    </div>
+
+    <div class="post">
+      <h4>User Name</h4>
+      <p>This is a sample Facebook post.</p>
+    </div>
+
+    <div class="post">
+      <h4>Another User</h4>
+      <p>This is another example post on the homepage.</p>
+    </div>
+
+  </div>
+
 </div>
 
-<div class="main">
-
-<div class="left">
-    <p>"Go to Home"</p>
-    <p>Reels</p>
-<p>Profile</p>
-<p>Friends</p>
-<p>Messages</p>
-<p>Marketplace</p>
-</div>
-
-<div class="feed">
-<div class="post">
-<h3>Elon Musk</h3>
-<p>Damn son, Palo is za best.</p>
-</div>
-
-<div class="post">
-<h3>Jeff Bezos</h3>
-<p>Hope to meet this Palo one day.</p>
-</div>
-</div>
-
-<div class="right">
-<h3>Contacts</h3>
-<p>donald trump</p>
-<p>Jesus Christ</p>
-<p>Elon Musk</p>
-</div>
-
-</div>
-
+<script src="script.js"></script>
 </body>
 </html>

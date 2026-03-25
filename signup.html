@@ -1,112 +1,51 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Facebook Sign Up</title>
-<link rel="stylesheet" href="signup.css">
+  <meta charset="UTF-8">
+  <title>Facebook - Sign Up</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
+<div class="signup-container">
 
-<div class="box">
-<h1 class="logo">facebook</h1>
-<h2>Create a new account</h2>
-<p>It's quick and easy.</p>
+  <div class="signup-box">
 
-<form>
-<div class="name">
-<input type="text" placeholder="First name">
-<input type="text" placeholder="Surname">
-</div>
+    <h1 class="logo-center">facebook</h1>
 
-<input type="text" placeholder="Mobile number or email address">
-<input type="password" placeholder="New password">
+    <h2>Create a new account</h2>
+    <p class="sub">It's quick and easy.</p>
 
-<label>Date of birth</label>
-<div class="dob">
-<select>
-<option>Day</option>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
-<option>6</option>
-<option>7</option>
-<option>8</option>
-<option>9</option>
-<option>10</option>
-<option>11</option>
-<option>12</option>
-<option>13</option>
-<option>14</option>
-<option>15</option>
-<option>16</option>
-<option>17</option>
-<option>18</option>
-<option>19</option>
-<option>20</option>
-<option>21</option>
-<option>22</option>
-<option>23</option>
-<option>24</option>
-<option>25</option>
-<option>26</option>
-<option>27</option>
-<option>28</option>
-<option>29</option>
-<option>30</option>
-<option>31</option>
-</select>
+    <form id="signupForm">
 
-<select>
-<option>Month</option>
-<option>Jan</option>
-<option>Feb</option>
-<option>Mar</option>
-<option>Apr</option>
-<option>May</option>
-<option>Jun</option>
-<option>Jul</option>
-<option>Aug</option>
-<option>Sept</option>
-<option>Oct</option>
-<option>Nov</option>
-<option>Dec</option>
-</select>
+      <div class="row">
+        <input type="text" placeholder="First name" required>
+        <input type="text" placeholder="Surname" required>
+      </div>
 
-<select>
-<option>Year</option>
-<option>tf u so young for?</option>
-<option>2008</option>
-<option>2007</option>
-<option>2006</option>
-<option>2005</option>
-<option>2004</option>
-<option>2003</option>
-<option>2002</option>
-<option>2001</option>
-<option>2000</option>
-<option>lmao why u so old?</option>
-</select>
-</div>
+      <input type="text" placeholder="Mobile number or email address" required>
+      <input type="password" placeholder="New password" required>
 
-<label>Gender</label>
-<div class="gender">
-<label><input type="radio" name="g"> Female</label>
-<label><input type="radio" name="g"> Male</label>
-<label><input type="radio" name="g"> Gay lmao</label>
-</div>
+      <label>Date of birth</label>
+      <input type="date" required>
 
-<button class="signup"><a href="home.html">Sign Up</a></button>
-</form>
+      <label>Gender</label>
+      <div class="gender">
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        <label><input type="radio" name="gender"> Custom</label>
+      </div>
+
+      <button type="submit" class="signup-btn">Sign Up</button>
+
+      <p class="login-link">Already have an account? <a href="index.html">Log in</a></p>
+
+    </form>
+
+  </div>
 
 </div>
 
-</div>
-
+<script src="script.js"></script>
 </body>
 </html>

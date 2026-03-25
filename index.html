@@ -1,25 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Facebook Login</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="left">
-            <h1 class="logo">facebook</h1>
-            <p>Facebook does whatever nigga</p>
-            </div>
-        </div>
-        <div class="right">
-            <form class="login-box">
-                <input type="text" placeholder="Email or phone">
-                <input type="password" placeholder="enter password">
-                <button><a href="signup.html">Create new account</a></button>
-                <a href="#">Forgotten Password</a>
-                <hr>
-                <button><a href="home.html">Log In</a></button>
-            </form>
-        </div>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="left">
+    <h1 class="logo">facebook</h1>
+    <p class="tagline">Facebook helps you connect and share with the people in your life.</p>
+  </div>
+
+  <div class="right">
+    <div class="login-box">
+
+      <form id="loginForm">
+        <input type="text" placeholder="Email address or phone number" required>
+        <input type="password" placeholder="Password" required>
+
+        <button type="submit" class="login-btn">Log in</button>
+      </form>
+
+      <a href="#" class="forgot">Forgotten password?</a>
+
+      <hr>
+
+      <button class="create-btn" onclick="goToSignup()">Create new account</button>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
+
