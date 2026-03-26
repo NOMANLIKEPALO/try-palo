@@ -2,71 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Professional Homepage</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Facebook - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav id="navbar">
+<!-- ===== TOPBAR ===== -->
+<header class="topbar">
+  <h1 class="logo-small">facebook</h1>
+  <input type="text" class="searchbar" placeholder="Search Facebook">
+  <button class="logout" onclick="logout()">Log out</button>
+</header>
+
+<div class="home-container">
+
+  <!-- ===== LEFT SIDEBAR ===== -->
+  <div class="sidebar left-sidebar">
+    <h3>Menu</h3>
     <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li>Profile</li>
+      <li>Friends</li>
+      <li>Messages</li>
+      <li>Notifications</li>
+      <li>Settings</li>
     </ul>
-  </nav>
+  </div>
 
-  <!-- Section 1: Hero -->
-  <section id="hero">
-    <h1>Welcome to My Site</h1>
-    <p>Your tagline goes here — make it catchy!</p>
-    <a href="#features" class="btn">Discover More</a>
-  </section>
+  <!-- ===== FEED ===== -->
+  <div class="feed">
 
-  <!-- Section 2: Features -->
-  <section id="features">
-    <h2>Our Features</h2>
-    <div class="feature-container">
-      <div class="feature-card">
-        <h3>Feature 1</h3>
-        <p>Describe your first awesome feature here.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Feature 2</h3>
-        <p>Describe your second awesome feature here.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Feature 3</h3>
-        <p>Describe your third awesome feature here.</p>
-      </div>
+    <!-- Post with image -->
+    <div class="post-box">
+      <textarea placeholder="What's on your mind?"></textarea>
+      <button>Post</button>
     </div>
-  </section>
 
-  <!-- Section 3: Gallery -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-container">
-      <img src="img1.jpg" alt="Gallery Image 1">
-      <img src="img2.jpg" alt="Gallery Image 2">
-      <img src="img3.jpg" alt="Gallery Image 3">
+    <div class="post">
+      <div class="post-header">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="profile" class="profile-pic">
+        <h4>Palo Pool</h4>
+      </div>
+      <p>This is a sample post with an image.</p>
+      <img src="https://source.unsplash.com/600x300/?nature,water" alt="post-image" class="post-image">
     </div>
-  </section>
 
-  <!-- Section 4: Contact / Footer -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: example@site.com</p>
-    <p>Phone: +234 000 000 0000</p>
-  </section>
+    <div class="post">
+      <div class="post-header">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="profile" class="profile-pic">
+        <h4>Jane Doe</h4>
+      </div>
+      <p>Check out this amazing view!</p>
+      <img src="https://source.unsplash.com/600x300/?mountains,sky" alt="post-image" class="post-image">
+    </div>
 
-  <footer>
-    <p>© 2026 Palo Pool. All rights reserved.</p>
-  </footer>
+    <div class="post">
+      <div class="post-header">
+        <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="profile" class="profile-pic">
+        <h4>Mike</h4>
+      </div>
+      <p>Just enjoying a chill day.</p>
+      <img src="https://source.unsplash.com/600x300/?beach,sunset" alt="post-image" class="post-image">
+    </div>
 
+  </div>
+
+  <!-- ===== RIGHT SIDEBAR ===== -->
+  <div class="sidebar right-sidebar">
+    <h3>Suggestions</h3>
+    <ul>
+      <li>Friend Suggestion 1</li>
+      <li>Friend Suggestion 2</li>
+      <li>Friend Suggestion 3</li>
+    </ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
