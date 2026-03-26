@@ -2,50 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Facebook - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Professional Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="topbar">
-  <h1 class="logo-small">facebook</h1>
-  <button class="logout" onclick="logout()">Log out</button>
-</header>
-
-<div class="home-container">
-
-  <div class="sidebar">
-    <h3>Menu</h3>
+  <!-- Navigation Bar -->
+  <nav id="navbar">
     <ul>
-      <li>Profile</li>
-      <li>Friends</li>
-      <li>Messages</li>
-      <li>Notifications</li>
-      <li>Settings</li>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </div>
+  </nav>
 
-  <div class="feed">
+  <!-- Section 1: Hero -->
+  <section id="hero">
+    <h1>Welcome to My Site</h1>
+    <p>Your tagline goes here — make it catchy!</p>
+    <a href="#features" class="btn">Discover More</a>
+  </section>
 
-    <div class="post-box">
-      <textarea placeholder="What's on your mind?"></textarea>
-      <button>Post</button>
+  <!-- Section 2: Features -->
+  <section id="features">
+    <h2>Our Features</h2>
+    <div class="feature-container">
+      <div class="feature-card">
+        <h3>Feature 1</h3>
+        <p>Describe your first awesome feature here.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Feature 2</h3>
+        <p>Describe your second awesome feature here.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Feature 3</h3>
+        <p>Describe your third awesome feature here.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="post">
-      <h4>User Name</h4>
-      <p>This is a sample Facebook post.</p>
+  <!-- Section 3: Gallery -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <img src="img1.jpg" alt="Gallery Image 1">
+      <img src="img2.jpg" alt="Gallery Image 2">
+      <img src="img3.jpg" alt="Gallery Image 3">
     </div>
+  </section>
 
-    <div class="post">
-      <h4>Another User</h4>
-      <p>This is another example post on the homepage.</p>
-    </div>
+  <!-- Section 4: Contact / Footer -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: example@site.com</p>
+    <p>Phone: +234 000 000 0000</p>
+  </section>
 
-  </div>
+  <footer>
+    <p>© 2026 Palo Pool. All rights reserved.</p>
+  </footer>
 
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
