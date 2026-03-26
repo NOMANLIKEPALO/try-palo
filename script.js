@@ -6,9 +6,8 @@ if(loginForm){
   loginForm.addEventListener("submit", function(e){
     e.preventDefault();
     // get input values
-    const inputs = loginForm.querySelectorAll("input");
-    const email = inputs[0].value;
-    const password = inputs[1].value;
+    const email = loginForm.querySelector('input[type="text"]').value;
+const password = loginForm.querySelector('input[type="password"]').value;
 
     // get saved account
     const savedEmail = localStorage.getItem("userEmail");
@@ -29,9 +28,8 @@ if (signupForm) {
   signupForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const inputs = signupForm.querySelectorAll("input");
-    const email = inputs[2].value;
-    const password = inputs[3].value;
+    const email = signupForm.querySelector('input[placeholder="Mobile number or email address"]').value;
+const password = signupForm.querySelector('input[placeholder="New password"]').value;
 
     // save account in browser
     localStorage.setItem("userEmail", email);
