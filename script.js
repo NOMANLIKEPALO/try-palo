@@ -5,25 +5,45 @@ const loginForm = document.getElementById("loginForm");
 if(loginForm){
   loginForm.addEventListener("submit", function(e){
     e.preventDefault();
-    window.location.href = "home.html";
+    // get input values
+    const inputs = loginForm.querySelectorAll("input");
+    const email = inputs[0].value;
+    const password = inputs[1].value;
+
+    // get saved account
+    const savedEmail = localStorage.getItem("userEmail");
+    const savedPassword = localStorage.getItem("userPassword");
+
+    // check if account exists
+    if (email === savedEmail && password === savedPassword) {
+      window.location.href = "home.html";
+    } else {
+      alert("Invalid email or password");
+    }
   });
 }
 
-// SIGNUP -> HOME
+// SIGNUP -> SAVE ACCOUNT -> HOME
 const signupForm = document.getElementById("signupForm");
-if(signupForm){
-  signupForm.addEventListener("submit", function(e){
+if (signupForm) {
+  signupForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    window.location.href = "home.html";
+
+    const inputs = signupForm.querySelectorAll("input");
+    const email = inputs[2].value;
+    const password = inputs[3].value;
+
+    // save account in browser
+    localStorage.setItem("userEmail", email);
+    localStorage.setItem("userPassword", password);
+
+    alert("Account created successfully! You can now log in.");
+
+    window.location.href = "index.html";
   });
 }
 
-function goToSignup(){
-  window.location.href = "signup.html";
-}
-
-function logout(){
+function logout() {
   window.location.href = "index.html";
-}
 
 </script>
